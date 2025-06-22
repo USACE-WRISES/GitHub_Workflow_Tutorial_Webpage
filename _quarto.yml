@@ -1,6 +1,12 @@
 project:
   type: book
   output-dir: docs
+  
+website:
+  title: "GitHub Skill Building Tutorials for Students & Researchers"
+  description: "A step-by-step GitHub tutorial for researchers, students, and collaborative teams using RStudio, VSCode, and Git GUI."
+  site-url: "https://usace-wrises.github.io/GitHub_Workflow_Tutorial_Webpage/"
+  open-graph: true
 
 book:
   title: "GitHub Workflow Skill Building"
