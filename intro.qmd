@@ -1,4 +1,4 @@
-# Introduction to GitHub
+# Introduction to GitHub Workflows
 
 GitHub is a platform that supports collaborative work and version control, making it easier for individuals and teams to manage changes in a project over time. It is built on Git, a system that tracks edits, enables branching, and helps users integrate changes without losing work or overwriting each other.
 
@@ -17,7 +17,7 @@ While GitHub is commonly used in software development, it is just as valuable fo
 ## Why Use GitHub?
 
 | Benefit | What It Enables |
-|----|----|
+|------------------------------------|------------------------------------|
 | Version tracking | Maintains a full history of what changed and when |
 | Safe experimentation | Allows testing and editing without disrupting the main work |
 | Collaboration | Supports shared contributions across individuals or teams |
@@ -75,7 +75,7 @@ Merging takes the changes from one branch and integrates them into another once 
 Understanding whether to **clone** or **fork** a repository depends on how you plan to interact with the project:
 
 | Situation | Action | Why |
-|----|----|----|
+|------------------------|------------------------|------------------------|
 | You are working on **your own project** (e.g., creating a personal website, analysis, or codebase) | **Clone** | You are the owner and want a local copy of your own repository to edit and manage |
 | You are part of a **team or organization** and contributing directly to a shared repository | **Clone** | You have direct access and permissions, so you can push updates to the main repo |
 | You want to **suggest edits to someone else's public project** but do **not** have write access | **Fork** | Forking lets you copy the project to your account, make changes, and submit a pull request without affecting the original |

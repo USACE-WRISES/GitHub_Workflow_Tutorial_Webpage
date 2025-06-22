@@ -12,51 +12,51 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "1  Introduction to GitHub",
+    "title": "1  Introduction to GitHub Workflows",
     "section": "",
     "text": "At its core, GitHub allows users to:\nWhile GitHub is commonly used in software development, it is just as valuable for researchers, analysts, students, and interdisciplinary teams working with code, data, or shared documentation.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub Workflows</span>"
     ]
   },
   {
     "objectID": "intro.html#why-use-github",
     "href": "intro.html#why-use-github",
-    "title": "1  Introduction to GitHub",
+    "title": "1  Introduction to GitHub Workflows",
     "section": "1.1 Why Use GitHub?",
     "text": "1.1 Why Use GitHub?\n\n\n\n\n\n\n\nBenefit\nWhat It Enables\n\n\n\n\nVersion tracking\nMaintains a full history of what changed and when\n\n\nSafe experimentation\nAllows testing and editing without disrupting the main work\n\n\nCollaboration\nSupports shared contributions across individuals or teams\n\n\nTransparency\nProvides clear records of authorship and revision details\n\n\nIntegration\nWorks with tools like RStudio, VSCode, and GitHub Desktop\n\n\n\nUsing GitHub keeps your work organized and traceable, whether you’re collaborating on a project, contributing to open-source software, or managing a professional workflow.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub Workflows</span>"
     ]
   },
   {
     "objectID": "intro.html#key-concepts-and-commands",
     "href": "intro.html#key-concepts-and-commands",
-    "title": "1  Introduction to GitHub",
+    "title": "1  Introduction to GitHub Workflows",
     "section": "1.2 Key Concepts and Commands",
     "text": "1.2 Key Concepts and Commands\n\nRepository (Repo)\nA repository is a project folder that contains your files and their version history. Everything related to the project (e.g., code, documents, presentations, models, and applications) can be stored in a repository.\n\nThere are size limitations to keep in mind:\n\nIndividual files should be kept under 100 MB\nRepositories should stay under 1 GB for best performance\nFor larger files such as datasets or media, GitHub recommends using Git Large File Storage (LFS)\n\nRepositories can be public (anyone can view or contribute) or private (access is restricted to selected collaborators). On a GitHub team or organization page, repositories can be managed by multiple team members, each with assigned roles and permissions. This setup makes it easy for groups to collaborate on shared projects, assign tasks, and track progress in one place.\n\n\n\nClone\nCloning means creating a local copy of a GitHub repository so you can work on it from your own computer.\n\n\nFork\nForking copies someone else’s repository to your own GitHub account. It’s typically used when you want to propose changes without editing the original project directly.\n\n\nBranch\nA branch is an independent workspace for editing or adding features. You can create and work on a branch without affecting the main project.\n\n\nCommit\nA commit is a snapshot of your changes, often grouped with a short message that describes what you did.\n\n\nPush\nPushing sends your committed changes from your local machine to GitHub.\n\n\nPull Request (PR)\nA pull request is a formal request to merge your changes into another branch or repository. This is how collaboration, review, and integration happen on GitHub.\n\n\nMerge\nMerging takes the changes from one branch and integrates them into another once it’s completed and reviewed.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub Workflows</span>"
     ]
   },
   {
     "objectID": "intro.html#when-to-clone-vs.-when-to-fork",
     "href": "intro.html#when-to-clone-vs.-when-to-fork",
-    "title": "1  Introduction to GitHub",
+    "title": "1  Introduction to GitHub Workflows",
     "section": "When to Clone vs. When to Fork",
     "text": "When to Clone vs. When to Fork\nUnderstanding whether to clone or fork a repository depends on how you plan to interact with the project:\n\n\n\n\n\n\n\n\nSituation\nAction\nWhy\n\n\n\n\nYou are working on your own project (e.g., creating a personal website, analysis, or codebase)\nClone\nYou are the owner and want a local copy of your own repository to edit and manage\n\n\nYou are part of a team or organization and contributing directly to a shared repository\nClone\nYou have direct access and permissions, so you can push updates to the main repo\n\n\nYou want to suggest edits to someone else’s public project but do not have write access\nFork\nForking lets you copy the project to your account, make changes, and submit a pull request without affecting the original\n\n\nYou want to use another repository as a template for your own version\nFork (or “Use this template”)\nForking preserves project history and attribution, giving you a starting point with full editing rights\n\n\n\n\nClone when you’re working on a repository you own or have permission to contribute to directly\nFork when you want to contribute to someone else’s project or experiment without changing the original\n\nBoth actions can help you get a local copy of the repository, but forking creates a separate relationship to the original project with a clear record of where it came from.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub Workflows</span>"
     ]
   },
   {
     "objectID": "intro.html#summary",
     "href": "intro.html#summary",
-    "title": "1  Introduction to GitHub",
+    "title": "1  Introduction to GitHub Workflows",
     "section": "1.3 Summary",
     "text": "1.3 Summary\nGitHub helps you:\n- Maintain clean, version records of your work\n- Collaborate without losing progress or conflicting with others\n- Contribute to shared projects in a structured and transparent way\nThroughout this tutorial, you’ll learn how to apply these concepts using tools like Git GUI, RStudio, and VSCode for working on your own or with a team.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction to GitHub Workflows</span>"
     ]
   },
   {
