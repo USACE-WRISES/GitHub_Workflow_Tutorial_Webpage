@@ -14,7 +14,7 @@ GitHub is a platform that supports collaborative work and version control, makin
 
 While GitHub is commonly used in software development, it is just as valuable for researchers, analysts, students, and interdisciplinary teams working with code, data, or shared documentation.
 
-## Why Use GitHub?
+## Why Use GitHub? {.unnumbered}
 
 | Benefit | What It Enables |
 |------------------------------------|------------------------------------|
@@ -26,7 +26,7 @@ While GitHub is commonly used in software development, it is just as valuable fo
 
 Using GitHub keeps your work organized and traceable, whether you're collaborating on a project, contributing to open-source software, or managing a professional workflow.
 
-## Key Concepts and Commands
+## Key Concepts and Commands {.unnumbered}
 
 ### Repository (Repo) {.unnumbered}
 
@@ -87,7 +87,7 @@ Understanding whether to **clone** or **fork** a repository depends on how you p
 
 Both actions can help you get a local copy of the repository, but **forking** creates a separate relationship to the original project with a clear record of where it came from.
 
-## Summary
+## Summary {.unnumbered}
 
 GitHub helps you:
 
