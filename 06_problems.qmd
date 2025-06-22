@@ -129,7 +129,7 @@ Even experienced users encounter problems when working with Git and GitHub. Thes
 # Summary {.unnumbered}
 
 | Problem | Fix |
-|----|----|
+|------------------------------------|------------------------------------|
 | Authentication fails | Use PAT or set up SSH |
 | Push fails due to README conflict | Don’t initialize GitHub repo with README |
 | Git not recognized | Install Git and restart IDE |
@@ -137,8 +137,6 @@ Even experienced users encounter problems when working with Git and GitHub. Thes
 | Wrong repo cloned | Confirm remote URL matches your GitHub fork |
 
 # Additional Resources {.unnumbered}
-
--   [GitHub Docs: Troubleshooting Git](https://docs.github.com/en/get-started/using-git/troubleshooting-git)
 
 -   [Happy Git with R](https://happygitwithr.com/)
 
