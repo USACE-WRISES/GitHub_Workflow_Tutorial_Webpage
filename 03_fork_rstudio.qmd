@@ -1,0 +1,134 @@
+---
+title: "Fork a New Repository with RStudio"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to fork a repository on GitHub
+
+-   Successfully fork a repository on GitHub and make changes locally using RStudio
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+## Part 1: Fork the Repository on GitHub {.unnumbered}
+
+1.  Navigate to the public repository you want to contribute to. (e.g., https://github.com/vmahan1998/GitHub_Basic_Skills.git)
+
+2.  Click the "**Fork** button in the top-right corner of the page.
+
+3.  Choose your GitHub account as the destination for the fork.
+
+4.  GitHub will create a copy of the repository under your account.
+
+## Part 2: Clone the Forked Repository Locally {.unnumbered}
+
+1.  Open RStudio.
+
+2.  Go to **File \> New Project \> Version Control \> Git**.
+
+3.  Paste the URL for the repository you want to clone:\
+    **Example**: "https://github.com/yourusername/your-repo-name.git"
+
+4.  Choose a directory where you want to store the project.
+
+## Part 3: Create New Branch {.unnumbered}
+
+1.  In the **Terminal** in RStudio type:
+
+```         
+-   git checkout -b new-message
+```
+
+**Note**: "**new-message**" is the name of the new branch.
+
+## Part 4: Make and Commit Changes Locally {.unnumbered}
+
+1.  Edit files in the RStudio editor as needed (e.g., modify `EDIT_ME.md` or code scripts).
+
+2.  In the **Git** tab (upper-right pane), click "**Refresh"** or "**Commit"**.
+
+3.  Stage the files you changed by checking the boxes next to them.
+
+4.  Add a descriptive commit message in the message box.
+
+5.  Click "**Commit"**.
+
+6.  Click the **green arrow** pointed north to push changes to GitHub Repo.
+
+## Part 6: Create a Pull Request {.unnumbered}
+
+1.  Go to your forked repository on GitHub in a web browser.
+
+2.  GitHub will prompt you to compare & open a pull request.
+
+3.  Click "**Compare & pull request"**.
+
+4.  Add a descriptive title and explanation of your changes.
+
+5.  Click "**Create pull request"** to propose your contribution to the original repository.
+
+## Part 7: Merge Pull Request (for repository maintainers) {.unnumbered}
+
+1.  If you have permission, go to the pull request on the original repository.
+
+2.  Review the changes and click "**Merge pull request"**.
+
+3.  Confirm the merge and delete the feature branch if no longer needed.
+
+# Video Tutorial {.unnumbered}
+
+## Fork the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_RStudio/01_Fork_Repo_RStudio.mp4 >}}
+
+## Clone the Repository, Create a New Branch, and Edit Files {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_RStudio/02_Clone_Repo_Create_Branch_RStudio.mp4 >}}
+
+## Create a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_RStudio/03_Create_Pull_Request_RStudio.mp4 >}}
+
+## Merge a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_RStudio/04_Merge_Pull_Request_RStudio.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Remote repository not found:**\
+    Make sure you created the repository on GitHub and copied the correct URL. RStudio does not create remote repositories.
+
+    **RStudio can:**
+
+    -   Create a local Git project on your computer
+
+    -   Connect to an existing remote repository (one that already exists on GitHub)
+
+    -   Push local changes to that remote
+
+    **Authentication failed:**\
+    GitHub no longer accepts passwords for HTTPS. If prompted, use a [personal access token (PAT)](https://github.com/settings/tokens) in place of your password.
+
+    **Push fails due to README or file conflicts:**\
+    Make sure your GitHub repository was created **without** initializing it with a README, .gitignore, or license. These files can create merge conflicts when pushing from RStudio.
+
+    **Missing Git in RStudio:**\
+    If Git options don’t appear when creating a new project, go to `Tools > Global Options > Git/SVN` and verify that RStudio detects Git. You may need to install Git from [git-scm.com](https://git-scm.com) and restart RStudio.
+
+    **Pushed changes not showing on GitHub:**\
+    Make sure you pushed to the correct remote and branch. Use `Git > Push` again in RStudio and check your GitHub repository online to confirm.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Creating a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+
+<!-- -->
+
+-   [Happy Git with R](https://happygitwithr.com)
+
+-   [RStudio Git Integration](https://support.posit.co/hc/en-us/articles/200532077)
+
+-   [Git for Windows](https://gitforwindows.org)

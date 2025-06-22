@@ -1,0 +1,48 @@
+---
+title: "Cloning a Repository with VSCode"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to clone or download a GitHub repository
+
+-   Successfully copy a repository to your local machine using VSCode
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open Visual Studio Code (VSCode).
+
+2.  On the **Welcome page**, click **Clone Git Repository**.
+
+    -   If you don’t see this option, install the **GitHub** **Extension** from the VSCode marketplace.
+
+3.  Paste the repository URL:\
+    **Example**: `https://github.com/vmahan1998/GitHub_Basic_Skills.git`
+
+4.  Choose a local folder where the repository should be saved.
+
+5.  Name the directory (typically the same as the repo name "**GitHub_Basic_Skills**").
+
+6.  When prompted, click "**Open"** to begin working inside the cloned repository.
+
+# Video Tutorial {.unnumbered}
+
+{{< video Tutorial_Videos/Clone_VSCode/01_Clone_Repo.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Authentication failed:** If prompted for login credentials, use a personal access token (PAT) instead of a password. Generate one at <https://github.com/settings/tokens>.
+
+-   **Git not installed:** Make sure Git is installed on your computer and that VSCode can detect it. You can download Git from <https://git-scm.com>.
+
+-   **Extension missing:** Install the GitHub or Git integration extension from the Extensions Marketplace.
+
+# Additonal Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [Happy Git with R](https://happygitwithr.com)
+-   [Using Git in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview)
+-   [Git for Windows](https://gitforwindows.org)

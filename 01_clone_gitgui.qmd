@@ -1,0 +1,45 @@
+---
+title: "Cloning a Repository with Git GUI"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to clone or download a GitHub repository
+
+-   Successfully copy a repository to your local machine using the GitHub GUI
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open Git GUI.
+
+2.  Click "**Clone Repository"**.
+
+3.  Paste the repository URL into the **Source Location** field.\
+    **Example**: `https://github.com/vmahan1998/GitHub_Basic_Skills.git`
+
+4.  Choose a **Target Directory** where the local copy should be saved.
+
+5.  Name the directory (typically the same as the repo name "**GitHub_Basic_Skills**".
+
+6.  Click "**Clone"**. Git GUI will create a local copy of the repository on your machine.
+
+# Video Tutorial {.unnumbered}
+
+{{< video Tutorial_Videos/Clone_Git_GUI/01_Clone_Git_GUI.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Authentication failed:** Git GUI may still ask for a GitHub username and password, which no longer work with HTTPS. Use a personal access token (PAT) instead. You can generate one at <https://github.com/settings/tokens>.
+
+-   **Nothing happens after cloning:** Double-check the Source URL and make sure it’s spelled correctly. Also, confirm that the folder you selected as the Target Directory is empty or available.
+
+-   **Can’t see the files in File Explorer:** Git GUI only manages version control. You’ll need to open the folder using your file browser or another tool like VSCode to view and edit files.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [GitHub Docs: About Git GUI Clients](https://docs.github.com/en/desktop/installing-and-configuring-git-gui)
+-   [Git for Windows (includes Git GUI)](https://gitforwindows.org/)

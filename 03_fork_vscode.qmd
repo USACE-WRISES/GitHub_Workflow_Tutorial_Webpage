@@ -1,0 +1,149 @@
+---
+title: "Fork a New Repository with VSCode"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to fork a repository on GitHub
+
+-   Successfully fork a repository on GitHub and make changes locally using VSCode
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+### Part 1: Fork the Repository on GitHub {.unnumbered}
+
+1.  Navigate to the public repository you want to contribute to. (e.g., https://github.com/vmahan1998/GitHub_Basic_Skills.git)
+
+2.  Click the "**Fork** button in the top-right corner of the page.
+
+3.  Choose your GitHub account as the destination for the fork.
+
+4.  GitHub will create a copy of the repository under your account.
+
+### Part 2: Clone the Forked Repository Locally {.unnumbered}
+
+1.  Open Visual Studio Code (VSCode).
+
+2.  On the **Welcome page**, click **Clone Git Repository**.
+
+    -   If you don’t see this option, install the **GitHub** **Extension** from the VSCode marketplace.
+
+3.  Paste the repository URL.
+
+4.  Choose a local folder where the repository should be saved.
+
+5.  Name the directory (typically the same as the repo name "**GitHub_Basic_Skills**").
+
+6.  When prompted, click "**Open"** to begin working inside the cloned repository.
+
+### Part 3: Create New Branch {.unnumbered}
+
+1.  In VSCode, open the **Source Control** sidebar (click the branch icon or press `Ctrl+Shift+G`).
+
+2.  Click the branch name (e.g., `main`) in the lower-left corner or at the top of the Source Control pane.
+
+3.  Select "**Create new branch"** from the dropdown.
+
+4.  Enter a name for your branch (e.g., `new-message`) and press "**Enter"**.
+
+5.  VSCode will automatically switch you to the new branch.
+
+### Part 4: Make and Commit Changes Locally {.unnumbered}
+
+-   Edit the files in VSCode as needed (e.g., modify `EDIT_ME.md` or source code).
+
+<!-- -->
+
+-   Save your changes (`Ctrl+S` or File \> Save).
+
+<!-- -->
+
+-   Open the **Source Control** pane.
+
+<!-- -->
+
+-   You should see your changed files listed.
+
+<!-- -->
+
+-   Hover over the file and click the **+** icon to stage it, or click the **+** icon next to **Changes** to stage all files.
+
+<!-- -->
+
+-   In the message box at the top, write a clear and descriptive commit message.
+
+<!-- -->
+
+-   Click the "**✓" Commit** button (or use the check mark icon).
+
+<!-- -->
+
+-   Click the "**↥" Push** icon in the bottom bar or from the Source Control menu to push your branch to GitHub.
+
+### Part 6: Create a Pull Request {.unnumbered}
+
+1.  Go to your forked repository on GitHub in a web browser.
+
+2.  GitHub will prompt you to compare & open a pull request.
+
+3.  Click "**Compare & pull request"**.
+
+4.  Add a descriptive title and explanation of your changes.
+
+5.  Click "**Create pull request"** to propose your contribution to the original repository.
+
+### Part 7: Merge Pull Request (for repository maintainers) {.unnumbered}
+
+1.  If you have permission, go to the pull request on the original repository.
+
+2.  Review the changes and click "**Merge pull request"**.
+
+3.  Confirm the merge and delete the feature branch if no longer needed.
+
+# Video Tutorial {.unnumbered}
+
+### Fork the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_VSCode/01_Create_Branch_Push_Changes_VSCode.mp4 >}}
+
+### Create a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_VSCode/02_Create_Pull_Request_VSCode.mp4 >}}
+
+### Merge a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_VSCode/03_Merge_Pull_Request_VSCode.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Remote repository not found**\
+    Make sure you created the repository on GitHub and copied the correct HTTPS or SSH URL. VSCode does not create remote repositories — it only connects to them.
+
+-   **VSCode can:**
+
+    -   Clone a remote repository from GitHub
+
+    -   Connect your local changes to a remote repo via Git
+
+    -   Push changes to an existing remote repository
+
+-   **Authentication failed**\
+    GitHub no longer supports passwords for HTTPS. If prompted, use a personal access token (PAT) instead. You can generate one at <https://github.com/settings/tokens>.
+
+-   **Push fails due to README or file conflicts**\
+    If the GitHub repo was initialized with a README, license, or `.gitignore`, and your local repo wasn’t, this can cause merge conflicts. Create your GitHub repo without those options when pushing an existing local project.
+
+-   **Git not detected**\
+    If Git features don’t appear in VSCode, install Git from <https://git-scm.com> and restart VSCode. Go to **View \> Command Palette \> Git: Show Git Output** to check if it’s recognized.
+
+-   **Pushed changes not showing on GitHub**\
+    Make sure you pushed to the correct remote (usually `origin`) and correct branch (`main` or `master`). You can check the branch in the bottom-left corner of VSCode.
+
+# Additonal Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [Using Git in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview)
+-   [GitHub Docs: Creating a personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)

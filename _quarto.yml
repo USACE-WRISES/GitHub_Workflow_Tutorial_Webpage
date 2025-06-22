@@ -1,0 +1,37 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "GitHub Workflow Skill Building"
+  author: "Vanessa Quintana"
+  date: "6/19/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - best_practices.qmd
+    - 01_clone_browser.qmd
+    - 01_clone_gitgui.qmd
+    - 01_clone_vscode.qmd
+    - 01_clone_rstudio.qmd
+
+    - 02_newrepo_gitgui.qmd
+    - 02_newrepo_vscode.qmd
+    - 02_newrepo_rstudio.qmd
+
+    - 03_fork_gitgui.qmd
+    - 03_fork_vscode.qmd
+    - 03_fork_rstudio.qmd
+
+    - 04_conflicts.qmd
+    - 05_stashed_changes.qmd
+    - 06_problems.qmd
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+
+editor: visual
+

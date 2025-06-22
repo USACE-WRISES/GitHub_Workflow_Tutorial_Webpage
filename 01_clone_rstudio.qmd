@@ -1,0 +1,48 @@
+---
+title: "Cloning a Repository with RStudio"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to clone or download a GitHub repository
+
+-   Successfully copy a repository to your local machine using RStudio
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open RStudio.
+
+2.  Go to **File \> New Project \> Version Control \> Git**.
+
+3.  Paste the URL for the repository you want to clone:\
+    **Example**: `https://github.com/vmahan1998/GitHub_Basic_Skills.git`
+
+4.  Choose a directory where you want to store the project.
+
+5.  Name the directory (typically the same as the repo name "**GitHub_Basic_Skills**").
+
+6.  Click **Create Project**. RStudio will open the cloned repository in a new project workspace.
+
+# Video Tutorial {.unnumbered}
+
+{{< video Tutorial_Videos/Clone_RStudio/01_Clone_RStudio.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Authentication failed:** RStudio may prompt you for GitHub credentials. If using HTTPS, you must enter a personal access token (PAT) instead of your password. You can create one at <https://github.com/settings/tokens>.
+
+-   **Git not configured in RStudio:** If Git is not detected, go to **Tools \> Global Options \> Git/SVN** and set the path to your Git executable (usually `git.exe`).
+
+-   **Missing Git option in New Project menu:** Install Git for Windows or macOS and restart RStudio.
+
+-   **Project won’t open or clone fails:** Double-check the URL and ensure that you selected the correct folder and have internet access.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [Happy Git with R](https://happygitwithr.com)
+-   [RStudio Git Integration](https://support.posit.co/hc/en-us/articles/200532077)
+-   [Git for Windows](https://gitforwindows.org)

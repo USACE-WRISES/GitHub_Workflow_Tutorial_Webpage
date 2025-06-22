@@ -1,0 +1,125 @@
+---
+title: "Forking a Repository and Making Changes with Git GUI"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to fork a repository on GitHub
+
+-   Successfully fork a repository on GitHub and make changes locally using Git GUI
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+## Part 1: Fork the Repository on GitHub {.unnumbered}
+
+1.  Navigate to the public repository you want to contribute to. (e.g., https://github.com/vmahan1998/GitHub_Basic_Skills.git)
+
+2.  Click the "**Fork** button in the top-right corner of the page.
+
+3.  Choose your GitHub account as the destination for the fork.
+
+4.  GitHub will create a copy of the repository under your account.
+
+## Part 2: Clone the Forked Repository Locally {.unnumbered}
+
+1.  Open Git GUI.
+
+2.  Click "**Clone Existing Repository"**.
+
+3.  Copy the URL of your forked repository from GitHub (e.g., `https://github.com/yourusername/repo-name.git`).
+
+4.  Paste the URL into the **Source Location** field.
+
+5.  Choose a **Target Directory** and name the folder (e.g., `repo-name`).
+
+6.  Click "**Clone"**.
+
+## Part 3: Create New Branch {.unnumbered}
+
+1.  In Git GUI, go to **Branch \> Create**.
+
+2.  Name your new branch (e.g., fix-typo, feature-new-header, or update-readme).
+
+3.  Click "**Create**" to switch to the new branch.
+
+## Part 4: Make and Commit Changes Locally {.unnumbered}
+
+1.  Open the cloned folder in File Explorer and make changes to the project files (e.g., `README.md` or code).
+
+2.  In Git GUI, click "**Rescan** to detect changes.
+
+3.  Stage your changes by clicking "**Stage Changed"**.
+
+4.  Write a commit message describing your changes and click "**Commit"**.
+
+## Part 5: Push Changes to Your Fork on GitHub {.unnumbered}
+
+1.  Go to **Remote \> Push**.
+
+2.  Make sure you are pushing to your fork (`new-message`) and to the appropriate branch (`main` or `master`).
+
+3.  Click "**Push"** to upload your changes.
+
+## Part 6: Create a Pull Request {.unnumbered}
+
+1.  Visit your fork on GitHub.
+
+2.  Click "**Compare & pull request"**.
+
+3.  Add a title and description of your changes.
+
+4.  Click "**Create pull request"** to submit your contribution to the original repository.
+
+## Part 7: Merge Pull Request (for repository maintainers) {.unnumbered}
+
+1.  In the original repository (or in your fork if you're an owner), open the pull request.
+
+2.  Click "**Merge pull request"**.
+
+3.  Confirm by clicking "**Confirm"**.
+
+4.  After merging, you can safely delete the branch you created.
+
+# Video Tutorial {.unnumbered}
+
+### Fork the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_Git_GUI/01_Fork_GitHub_Repo.mp4 >}}
+
+### Clone the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_Git_GUI/02_Clone_GitHub_Repo.mp4 >}}
+
+### Create a New Branch and Edit Files {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_Git_GUI/03_Create_Branch_Push_Changes.mp4 >}}
+
+### Create a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_Git_GUI/04_Create_Pull_Request.mp4 >}}
+
+### Merge a Pull Request {.unnumbered}
+
+{{< video Tutorial_Videos/Fork_Repo_Git_GUI/05_Merge_Pull_Request.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Authentication failed:** Use a personal access token (PAT) if prompted for your GitHub credentials.
+
+-   **Remote repository not found:** Double-check the URL you copied from your fork.
+
+-   **Unable to push changes:** Ensure you are pushing to your fork, not the original repository (you won’t have write access to the original).
+
+-   **Changes not showing in Git GUI:** Click **Rescan** to detect uncommitted changes.
+
+-   **Wrong branch:** Make sure you’re working on the correct branch, especially if the original project uses `main` instead of `master`.
+
+# Additional Resources
+
+-   [GitHub Docs: Forking a repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+-   [GitHub Docs: About pull requests](https://docs.github.com/en/pull-requests)
+-   [Git for Windows (includes Git GUI)](https://gitforwindows.org)
+-   [Happy Git with R](https://happygitwithr.com)

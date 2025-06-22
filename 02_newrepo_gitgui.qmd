@@ -1,0 +1,72 @@
+---
+title: "Creating a New Repository with Git GUI"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to create a new repository on GitHub
+
+-   Successfully create a repository in GitHub using Git GUI
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open Git GUI.
+
+2.  Click **Create New Repository**.
+
+3.  Choose or create a folder where the new repository will be initialized.
+
+4.  Git GUI will create an empty repository in that folder. Open the folder in a file browser and add your project files or create a new file (e.g., `README.md`).
+
+5.  To push the new repository to GitHub:
+
+    -   First, create a new repository on GitHub.com without initializing it with a README.
+    -   Back in Git GUI, go to **Remote \> Add** and paste the GitHub repo URL.
+    -   Set the remote name to `master`.
+    -   Go to **Remote \> Push** to upload your local repository to GitHub.
+
+6.  In Git GUI, click "**Rescan"** to see added files.
+
+7.  Stage changes by clicking "**Stage Changed"**.
+
+8.  Write a commit message (e.g., "Initial commit") and click "**Commit"**.
+
+# Video Tutorial {.unnumbered}
+
+## Create the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_Git_GUI/01_Create_Repo_Git_GUI.mp4 >}}
+
+## Initialize the Repository on GitHub {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_Git_GUI/02_Initialize_Repo_in_Browser.mp4 >}}
+
+## Push the Repository to GitHub {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_Git_GUI/03_Push_Repo_to_Github.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Remote repository not found:** Make sure you created the repository on GitHub and that the URL is correct. Git GUI does **not** include functionality to create a new repository on GitHub.
+
+    **It can only:**
+
+    -   Create a local Git repository on your computer
+    -   Connect to an existing remote repository (one that already exists on GitHub)
+    -   Push local changes to that existing remote
+
+-   **Authentication failed:** Use a personal access token (PAT) if prompted for your GitHub credentials.
+
+-   **Push fails due to README conflict:** Ensure your GitHub repo was created without a README, license, or `.gitignore` to avoid merge conflicts.
+
+-   **Changes not appearing:** Click "**Rescan"** to refresh the list of changed files in Git GUI.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Creating a new repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+-   [GitHub Docs: Adding a remote](https://docs.github.com/en/get-started/getting-started-with-git/managing-remote-repositories)
+-   [Git for Windows (includes Git GUI)](https://gitforwindows.org)
+-   [Happy Git with R](https://happygitwithr.com)

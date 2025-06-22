@@ -1,0 +1,110 @@
+---
+title: "Addressing Version Conflicts"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what causes version conflicts in Git
+
+-   Learn how to identify and resolve conflicts in your code editor or Git interface
+
+-   Gain confidence in committing resolved changes and continuing collaboration workflows
+
+# What Are Version Conflicts? {.unnumbered}
+
+A version conflict happens when two people (or two branches) change the same line of a file differently, and Git cannot decide which version to keep. This typically occurs during merging or pulling changes.
+
+# When Do Conflicts Occur? {.unnumbered}
+
+-   Pulling changes from the remote repository that modify the same file you changed locally
+
+-   Merging branches that have diverged with overlapping changes
+
+-   Rebasing a branch with changes that conflict with the main branch
+
+# Step-by-Step Instructions to Resolve Conflicts {.unnumbered}
+
+### Step 1: Identify the Conflict {.unnumbered}
+
+Git will tell you which files are in conflict. Open your Git interface or terminal and look for a message like:
+
+```         
+CONFLICT (content): Merge conflict in filename.ext
+```
+
+The file will now contain conflict markers like:
+
+```         
+<<<<<<< HEAD Your local changes ======= Incoming changes from the other branch >>>>>>> branch-name
+```
+
+### Step 2: Edit the File {.unnumbered}
+
+-   Open the file in your editor (RStudio, VSCode, or any text editor).
+
+-   Decide what the correct version should be. You can:
+
+    -   Keep your changes
+
+    -   Keep the incoming changes
+
+    -   Combine both
+
+-   Delete the conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) after resolving.
+
+-   Stage file with conflicts resolved.
+
+## Step 4: Complete the Merge or Pull
+
+If you were merging:
+
+```         
+git commit -m "Resolve merge conflict in filename.ext"
+```
+
+If you were pulling:
+
+```         
+git pull --continue
+```
+
+# Tool-Specific Tips {.unnumbered}
+
+### RStudio {.unnumbered}
+
+-   Conflicted files appear in the Git tab
+
+-   Edit the file, then click the checkbox next to it
+
+-   Click Commit to finalize
+
+### VSCode {.unnumbered}
+
+-   Conflict sections are highlighted with options to accept current, incoming, both, or compare
+
+-   Click the appropriate resolution button for each conflict block
+
+-   Save the file and commit
+
+### Git GUI {.unnumbered}
+
+-   After a merge conflict, click "Rescan"
+
+-   Stage files after resolving
+
+-   Add a commit message and click Commit
+
+# Troubleshooting {.unnumbered}
+
+-   **Still see conflict markers?** Ensure all markers were removed from the file.
+
+-   **Commit rejected after resolving?** You may have staged but not committed. Try again with `git commit`.
+
+-   **Can't push?** Make sure your branch is ahead of the remote and conflict-free.
+
+# Additional Resources {.unnumbered}
+
+-   GitHub Docs: [Resolving a merge conflict](https://docs.github.com/en/get-started/using-git/resolving-merge-conflicts)
+
+-   VSCode Docs: [Resolve merge conflicts](https://code.visualstudio.com/docs/editor/versioncontrol#_merge-conflicts)

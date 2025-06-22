@@ -1,0 +1,92 @@
+---
+title: "Creating a New Repository with VSCode"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to create a new repository on GitHub
+
+-   Successfully create a local Git repository in VSCode and push it to GitHub
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+### Part 1: Create a Local Repository in VSCode {.unnumbered}
+
+1.  Open Visual Studio Code (VSCode).
+
+2.  Create a new folder on your computer and open it in VSCode.
+
+3.  Inside VSCode, go to **View \> Source Control** or click the Source Control icon on the left sidebar.
+
+4.  Click **Initialize Repository** to turn the folder into a local Git repository.
+
+5.  Create or add your project files (e.g., `README.md`, `.py`, `.R`, or `.ipynb` files).
+
+### Part 2: Create a Repository on GitHub {.unnumbered}
+
+1.  In your browser, go to [GitHub.com](https://github.com) and sign in.
+
+2.  Click the **+** icon in the upper-right and select **New Repository**.
+
+3.  Name your repository (e.g., `my-new-repo`).
+
+4.  **Important**: *Do not* initialize the repo with a README, `.gitignore`, or license (this prevents conflicts).
+
+5.  Click **Create Repository**.
+
+### Part 3: Link and Push to GitHub {.unnumbered}
+
+1.  In VSCode, open the **Terminal** (View \> Terminal).
+
+2.  In the **Terminal** type:
+
+    -   git remote add origin <https://github.com/vmahan1998/GitHub_Basic_Skills_Create_Repo_Test_VSCode.git>
+
+    -   git branch -M main
+
+    -   git push -u origin main
+
+# Video Tutorial {.unnumbered}
+
+### Create the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_VSCode/01_Create_Repo_VSCode.mp4 >}}
+
+### Push the Repository to GitHub {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_VSCode/02_Connect_Repo_Push_Changes_VSCode.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Remote repository not found:**\
+    Make sure you created the repository on GitHub and copied the correct URL. RStudio does not create remote repositories.
+
+-   **RStudio can:**
+
+    -   Create a local Git project on your computer
+
+    -   Connect to an existing remote repository (one that already exists on GitHub)
+
+    -   Push local changes to that remote
+
+-   **Authentication failed:**\
+    GitHub no longer accepts passwords for HTTPS. If prompted, use a [personal access token (PAT)](https://github.com/settings/tokens) in place of your password.
+
+-   **Push fails due to README or file conflicts:**\
+    Make sure your GitHub repository was created **without** initializing it with a README, .gitignore, or license. These files can create merge conflicts when pushing from RStudio.
+
+-   **Missing Git in RStudio:**\
+    If Git options don’t appear when creating a new project, go to `Tools > Global Options > Git/SVN` and verify that RStudio detects Git. You may need to install Git from [git-scm.com](https://git-scm.com) and restart RStudio.
+
+-   **Pushed changes not showing on GitHub:**\
+    Make sure you pushed to the correct remote and branch. Use `Git > Push` again in RStudio and check your GitHub repository online to confirm.
+
+# Additonal Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [Happy Git with R](https://happygitwithr.com)
+-   [Using Git in VSCode](https://code.visualstudio.com/docs/sourcecontrol/overview)
+-   [Git for Windows](https://gitforwindows.org)

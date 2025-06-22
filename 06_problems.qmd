@@ -1,0 +1,147 @@
+---
+title: "Troubleshooting Common Problems"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Recognize several common problems when using GitHub
+
+-   Learn how to troubleshoot common Git issues with step-by-step solutions
+
+-   Build confidence navigating authentication, syncing, and collaboration challenges
+
+# What Are Common GitHub Problems? {.unnumbered}
+
+Even experienced users encounter problems when working with Git and GitHub. These issues usually occur during setup, collaboration, or when switching between tools like RStudio, VSCode, and Git GUI.
+
+# When Do These Problems Occur? {.unnumbered}
+
+-   Pushing changes without proper authentication
+
+-   Pulling updates when your local files have diverged
+
+-   Conflicting file versions due to multiple contributors
+
+-   Forgetting to stage, commit, or sync your changes
+
+-   Not configuring Git properly the first time
+
+# Step-by-Step Guide to Fix Common Issues {.unnumbered}
+
+### Problem 1: Authentication Failed {.unnumbered}
+
+**What it looks like:** You’re prompted for a password, but login fails.\
+**Why it happens:** GitHub no longer supports password authentication for HTTPS.
+
+**Solution:**
+
+1.  Generate a [Personal Access Token (PAT)](https://github.com/settings/tokens).
+
+2.  Use the token in place of your GitHub password when prompted.
+
+3.  Consider using an SSH key for future sessions (especially in VSCode).
+
+### Problem 2: Repo Exists on GitHub, But Push Fails {.unnumbered}
+
+**What it looks like:** You get an error saying remote repository not found or push is rejected.\
+**Why it happens:** The GitHub repo is initialized with a README or other files that conflict with your local setup.
+
+**Solution:**
+
+1.  When creating the repo on GitHub, do not initialize with README, license, or .gitignore.
+
+2.  If conflicts exist, pull first:
+
+    ```         
+    git pull origin main --allow-unrelated-histories
+    ```
+
+3.  Resolve any conflicts, then push.
+
+### Problem 3: Git Not Detected {.unnumbered}
+
+**What it looks like:** Git features are missing in RStudio or VSCode.\
+**Why it happens:** Git is not installed or not properly linked to your IDE.
+
+**Solution:**
+
+1.  Install Git from [git-scm.com](https://git-scm.com).
+
+2.  Restart your IDE.
+
+3.  In RStudio: Go to **Tools \> Global Options \> Git/SVN** and verify the Git executable path.
+
+4.  In VSCode: Git should be detected automatically. If not, check your system path.
+
+### Problem 4: Changes Aren’t Showing on GitHub {.unnumbered}
+
+**What it looks like:** You committed locally, but nothing appears in your GitHub repo.\
+**Why it happens:** You forgot to push your changes.
+
+**Solution:**
+
+1.  After committing, push using:
+
+    ```         
+    git push origin main
+    ```
+
+2.  Refresh the GitHub page to confirm.
+
+### Problem 5: You Cloned the Wrong Repo or Fork {.unnumbered}
+
+**What it looks like:** You're editing a repo, but you can't push changes.\
+**Why it happens:** You cloned the original repo instead of your fork.
+
+**Solution:**
+
+1.  Fork the original repository on GitHub.
+
+2.  Clone your fork, not the original project.
+
+3.  Confirm your remote URL with:
+
+    ```         
+    git remote -v
+    ```
+
+# Tool-Specific Tips {.unnumbered}
+
+### RStudio {.unnumbered}
+
+-   Use the Git tab to commit and push
+
+-   If Git tab is missing, configure Git in **Tools \> Global Options \> Git/SVN**
+
+### VSCode {.unnumbered}
+
+-   Use the Source Control tab
+
+-   Look for inline errors or tooltips when actions fail
+
+### Git GUI {.unnumbered}
+
+-   Use “Rescan” and “Push” manually
+
+-   Add remote via **Remote \> Add**
+
+# Summary {.unnumbered}
+
+| Problem | Fix |
+|----|----|
+| Authentication fails | Use PAT or set up SSH |
+| Push fails due to README conflict | Don’t initialize GitHub repo with README |
+| Git not recognized | Install Git and restart IDE |
+| Can’t push changes | Make sure you're on the correct branch and have committed |
+| Wrong repo cloned | Confirm remote URL matches your GitHub fork |
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Troubleshooting Git](https://docs.github.com/en/get-started/using-git/troubleshooting-git)
+
+-   [Happy Git with R](https://happygitwithr.com/)
+
+-   [Pro Git Book](https://git-scm.com/book/en/v2)
+
+-   [VSCode Docs: Git Support](https://code.visualstudio.com/docs/editor/versioncontrol)

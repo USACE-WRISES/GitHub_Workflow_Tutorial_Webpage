@@ -1,0 +1,72 @@
+---
+title: "Best Practices to Maintain a GitHub Repository"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand habits that improve collaboration and reduce version control errors
+
+-   Learn effective practices for managing changes in GitHub repositories
+
+-   Apply consistent workflows for using Git across different platforms
+
+# Why Do Best Practices Matter? {.unnumbered}
+
+Using Git and GitHub effectively is more than just committing and pushing code. It involves managing your repository in a way that keeps it organized, understandable, and collaborative. These practices apply whether you are working alone or with a team.
+
+# Daily Workflow Best Practices {.unnumbered}
+
+### 1. **Pull Before You Start** {.unnumbered}
+
+Always begin your work session by pulling the latest changes:
+
+```         
+git pull
+```
+
+This ensures your local files are up-to-date with the remote repository and helps avoid merge conflicts later.
+
+### 2. **Use Meaningful Commit Messages** {.unnumbered}
+
+Each commit should explain what and why you made changes:
+
+```         
+git commit -m "Fix typo in data summary and update README"
+```
+
+Avoid vague messages like "update" or "fix."
+
+### 3. **Push Before You Leave** {.unnumbered}
+
+Before ending your work session, commit any final changes and push to GitHub:
+
+```         
+git add . git commit -m "Wrap up session and push changes" git push
+```
+
+This keeps your work synced and backed up in the remote repository.
+
+# Organizational Practices {.unnumbered}
+
+-   **Use a clear README**: Include instructions for how to run the project, data sources, dependencies, and project purpose.
+
+-   **Maintain file structure**: Use directories (e.g., `/data`, `/scripts`, `/docs`) to keep files organized.
+
+-   **Document dependencies**: Use `requirements.txt` (Python) or `DESCRIPTION` (R) to list required packages.
+
+-   **Use issues and pull requests**: Track bugs, suggestions, and feature development using GitHub Issues. Use Pull Requests (PRs) to review and integrate changes.
+
+# Collaboration Tips {.unnumbered}
+
+-   **Branch for Features or Fixes**: Create a new branch for each major feature or change:
+
+    ```         
+    git checkout -b feature-login-form
+    ```
+
+-   **Review Before Merge**: Always review changes in a Pull Request before merging into `main` or `master`. Leave comments and suggestions when working with others.
+
+-   **Avoid Committing Sensitive Files**: Use a `.gitignore` file to exclude data files, credentials, or temporary files that shouldn’t be tracked.
+
+By following these habits, you can prevent conflicts, improve collaboration, and make your GitHub projects easier to maintain over time.

@@ -1,0 +1,100 @@
+# Introduction to GitHub
+
+GitHub is a platform that supports collaborative work and version control, making it easier for individuals and teams to manage changes in a project over time. It is built on Git, a system that tracks edits, enables branching, and helps users integrate changes without losing work or overwriting each other.
+
+#### At its core, GitHub allows users to: {.unnumbered}
+
+-   Track changes across project files
+
+-   Safely test new ideas using branches
+
+-   Propose and review edits before they’re added to a shared project
+
+-   Work in parallel with others while keeping a complete history of updates
+
+While GitHub is commonly used in software development, it is just as valuable for researchers, analysts, students, and interdisciplinary teams working with code, data, or shared documentation.
+
+## Why Use GitHub?
+
+| Benefit | What It Enables |
+|----|----|
+| Version tracking | Maintains a full history of what changed and when |
+| Safe experimentation | Allows testing and editing without disrupting the main work |
+| Collaboration | Supports shared contributions across individuals or teams |
+| Transparency | Provides clear records of authorship and revision details |
+| Integration | Works with tools like RStudio, VSCode, and GitHub Desktop |
+
+Using GitHub keeps your work organized and traceable, whether you're collaborating on a project, contributing to open-source software, or managing a professional workflow.
+
+## Key Concepts and Commands
+
+### Repository (Repo) {.unnumbered}
+
+A repository is a project folder that contains your files and their version history. Everything related to the project (e.g., code, documents, presentations, models, and applications) can be stored in a repository.
+
+#### There are size limitations to keep in mind: {.unnumbered}
+
+-   Individual files should be kept under 100 MB
+
+-   Repositories should stay under 1 GB for best performance
+
+-   For larger files such as datasets or media, GitHub recommends using Git Large File Storage (LFS)
+
+Repositories can be public (anyone can view or contribute) or private (access is restricted to selected collaborators). On a GitHub team or organization page, repositories can be managed by multiple team members, each with assigned roles and permissions. This setup makes it easy for groups to collaborate on shared projects, assign tasks, and track progress in one place.
+
+### Clone {.unnumbered}
+
+Cloning means creating a local copy of a GitHub repository so you can work on it from your own computer.
+
+### Fork {.unnumbered}
+
+Forking copies someone else’s repository to your own GitHub account. It’s typically used when you want to propose changes without editing the original project directly.
+
+### Branch {.unnumbered}
+
+A branch is an independent workspace for editing or adding features. You can create and work on a branch without affecting the main project.
+
+### Commit {.unnumbered}
+
+A commit is a snapshot of your changes, often grouped with a short message that describes what you did.
+
+### Push {.unnumbered}
+
+Pushing sends your committed changes from your local machine to GitHub.
+
+### Pull Request (PR) {.unnumbered}
+
+A pull request is a formal request to merge your changes into another branch or repository. This is how collaboration, review, and integration happen on GitHub.
+
+### Merge {.unnumbered}
+
+Merging takes the changes from one branch and integrates them into another once it’s completed and reviewed.
+
+## When to Clone vs. When to Fork {.unnumbered}
+
+Understanding whether to **clone** or **fork** a repository depends on how you plan to interact with the project:
+
+| Situation | Action | Why |
+|----|----|----|
+| You are working on **your own project** (e.g., creating a personal website, analysis, or codebase) | **Clone** | You are the owner and want a local copy of your own repository to edit and manage |
+| You are part of a **team or organization** and contributing directly to a shared repository | **Clone** | You have direct access and permissions, so you can push updates to the main repo |
+| You want to **suggest edits to someone else's public project** but do **not** have write access | **Fork** | Forking lets you copy the project to your account, make changes, and submit a pull request without affecting the original |
+| You want to **use another repository as a template** for your own version | **Fork** (or “Use this template”) | Forking preserves project history and attribution, giving you a starting point with full editing rights |
+
+-   **Clone** when you’re working on a repository you own or have permission to contribute to directly
+
+-   **Fork** when you want to contribute to someone else’s project or experiment without changing the original
+
+Both actions can help you get a local copy of the repository, but **forking** creates a separate relationship to the original project with a clear record of where it came from.
+
+## Summary
+
+GitHub helps you:
+
+\- Maintain clean, version records of your work
+
+\- Collaborate without losing progress or conflicting with others
+
+\- Contribute to shared projects in a structured and transparent way
+
+Throughout this tutorial, you’ll learn how to apply these concepts using tools like Git GUI, RStudio, and VSCode for working on your own or with a team.

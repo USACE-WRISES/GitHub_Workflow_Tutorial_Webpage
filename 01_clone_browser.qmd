@@ -1,0 +1,36 @@
+---
+title: "Cloning a Repository through a Web Browser"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to clone or download a GitHub repository
+-   Successfully copy a repository to your local machine from your browser using the GitHub website
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open the repository you want to copy on GitHub.
+
+2.  Click the blue **Code** button.
+
+3.  Select **Download ZIP**.
+
+4.  Save and unzip the file to your computer.
+
+5.  This option gives you the files but does not connect to version control.
+
+# Video Tutorial {.unnumbered}
+
+{{< video Tutorial_Videos/Clone_Browser/01_Download_Existing_Repo.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Authentication failed:** Use a personal access token (PAT) if prompted for a password.
+-   **Downloaded ZIP doesn’t update:** ZIP files are static and will not reflect future changes to the repository.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
+-   [Happy Git with R](https://happygitwithr.com)

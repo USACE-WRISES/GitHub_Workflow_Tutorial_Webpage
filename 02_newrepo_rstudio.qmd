@@ -1,0 +1,85 @@
+---
+title: "Creating a New Repository with Rstudio"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to create a new repository on GitHub
+
+-   Successfully create a local Git repository in RStudio and push it to GitHub
+
+-   Identify common errors and learn how to fix them
+
+# Step-by-Step Instructions {.unnumbered}
+
+1.  Open RStudio.
+
+2.  Go to **File \> New Project \> New Directory \> Empty Project**.
+
+3.  Choose a folder name and directory location for your new project.
+
+4.  Check the box for **"Create a git repository"** (this initializes Git locally).
+
+5.  Click **Create Project**. Your new project will open with Git enabled.
+
+6.  Create or add your project files (e.g., `README.md`, `.R` scripts, data).
+
+7.  In your browser, create a new repository on GitHub.com.
+
+    -   Do **not** initialize it with a README, license, or `.gitignore`.
+
+8.  Back in RStudio, go to the **Terminal** pane and run:
+
+    -   git remote add origin https://github.com/yourusername/your-repo-name.git
+
+    -   git branch -M main
+
+    -   git push -u origin main
+
+# Video Tutorial {.unnumbered}
+
+### Create the Repository {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_RStudio/01_Create_Repo_RStudio.mp4 >}}
+
+### Push the Repository to GitHub {.unnumbered}
+
+{{< video Tutorial_Videos/Create_Repo_RStudio/02_Create_Branch_Push_Repo.mp4 >}}
+
+# Troubleshooting {.unnumbered}
+
+-   **Remote repository not found:**\
+    Make sure you created the repository on GitHub and copied the correct URL. RStudio does not create remote repositories.
+
+    **RStudio can:**
+
+    -   Create a local Git project on your computer
+
+    -   Connect to an existing remote repository (one that already exists on GitHub)
+
+    -   Push local changes to that remote
+
+    **Authentication failed:**\
+    GitHub no longer accepts passwords for HTTPS. If prompted, use a [personal access token (PAT)](https://github.com/settings/tokens) in place of your password.
+
+    **Push fails due to README or file conflicts:**\
+    Make sure your GitHub repository was created **without** initializing it with a README, .gitignore, or license. These files can create merge conflicts when pushing from RStudio.
+
+    **Missing Git in RStudio:**\
+    If Git options don’t appear when creating a new project, go to `Tools > Global Options > Git/SVN` and verify that RStudio detects Git. You may need to install Git from [git-scm.com](https://git-scm.com) and restart RStudio.
+
+    **Pushed changes not showing on GitHub:**\
+    Make sure you pushed to the correct remote and branch. Use `Git > Push` again in RStudio and check your GitHub repository online to confirm.
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: Creating a repository](https://docs.github.com/en/get-started/quickstart/create-a-repo)
+
+<!-- -->
+
+-   [Happy Git with R](https://happygitwithr.com)
+
+-   [RStudio Git Integration](https://support.posit.co/hc/en-us/articles/200532077)
+
+-   [Git for Windows](https://gitforwindows.org)

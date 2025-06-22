@@ -1,0 +1,132 @@
+---
+title: "Recovering Stashed Changes"
+format: html
+---
+
+# Learning Objectives {.unnumbered}
+
+-   Understand what it means to stash changes in Git
+
+-   Learn how to view, apply, or drop stashed changes
+
+-   Restore work safely after interruptions or switching branches
+
+# What Is Git Stash? {.unnumbered}
+
+Stashing temporarily saves your uncommitted changes so you can work on something else without losing progress. Git stores these changes in a stack, which you can apply later to continue where you left off.
+
+# When to Use Stash {.unnumbered}
+
+You are in the middle of editing files but need to:
+
+-   Switch branches
+
+-   Pull new changes from the remote
+
+-   Run or test something cleanly without committing unfinished work
+
+# Step-by-Step Instructions {.unnumbered}
+
+### Step 1: Stash Your Changes {.unnumbered}
+
+In your terminal or Git interface, run:
+
+```         
+git stash
+```
+
+This command stashes all tracked changes. If you also want to stash untracked files:
+
+```         
+git stash -u
+```
+
+You will see a confirmation message like:
+
+```         
+Saved working directory and index state WIP on main: abc1234 Update index file
+```
+
+### Step 2: List All Stashes {.unnumbered}
+
+You can view all stored stashes with:
+
+```         
+git stash list
+```
+
+Output will look like:
+
+```         
+stash@{0}: WIP on main: abc1234 Update index file stash@{1}: WIP on feature-branch: def5678 Add draft
+```
+
+### Step 3: Apply a Stash {.unnumbered}
+
+To apply the most recent stash:
+
+```         
+git stash apply
+```
+
+To apply a specific stash from the list:
+
+```         
+git stash apply stash@{1}
+```
+
+To both apply and remove the stash:
+
+```         
+git stash pop
+```
+
+### Step 4: Continue Your Work {.unnumbered}
+
+After applying the stash:
+
+-   Open your files
+
+-   Make any additional edits
+
+-   Stage and commit your changes as usual
+
+# Tool-Specific Tips {.unnumbered}
+
+### RStudio {.unnumbered}
+
+-   Use the Terminal tab to run stash commands
+
+-   There is no Git stash functionality in the Git tab
+
+### VSCode {.unnumbered}
+
+-   Use the built-in Terminal to stash or apply
+
+-   Extensions like GitLens allow visual stash management
+
+### Git GUI {.unnumbered}
+
+-   Stashing is not supported in the interface
+
+-   Use Git Bash or another terminal to stash or apply changes
+
+# Troubleshooting {.unnumbered}
+
+-   **Stash doesn’t apply**: Check for merge conflicts or try a specific stash with `git stash apply stash@{0}`
+
+-   **Changes disappear after popping**: Use `git stash list` to confirm the stash was removed
+
+-   **Forgot what you stashed**: Use `git stash show -p` to review details of a stash
+
+# Additional Resources {.unnumbered}
+
+-   [GitHub Docs: git stash](https://docs.github.com/en/get-started/using-git/saving-changes)
+
+<!-- -->
+
+-   [Happy Git with R: Stashing](https://happygitwithr.com)
+
+<!-- -->
+
+-   [Pro Git Book: Git Stashing](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
