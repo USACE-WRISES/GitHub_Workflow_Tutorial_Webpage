@@ -122,11 +122,5 @@ After applying the stash:
 # Additional Resources {.unnumbered}
 
 -   [GitHub Docs: git stash](https://docs.github.com/en/get-started/using-git/saving-changes)
-
-<!-- -->
-
 -   [Happy Git with R: Stashing](https://happygitwithr.com)
-
-<!-- -->
-
 -   [Pro Git Book: Git Stashing](https://git-scm.com/book/en/v2/Git-Tools-Stashing-and-Cleaning)
