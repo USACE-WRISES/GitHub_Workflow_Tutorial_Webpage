@@ -107,7 +107,7 @@ format: html
 
 ### Fork the Repository {.unnumbered}
 
-{{< video Tutorial_Videos/Fork_Repo_VSCode/01_Create_Branch_Push_Changes_VSCode.mp4 >}}
+{{< video Tutorial_Videos/Fork_Repo_VSCode/01_Fork_Create_Branch_Push_Changes_VSCode.mp4 >}}
 
 ### Create a Pull Request {.unnumbered}
 
