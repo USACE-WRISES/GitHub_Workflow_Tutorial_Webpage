@@ -1,5 +1,5 @@
 ---
-title: "Fork a New Repository with VSCode"
+title: "Forking a Repository and Making Changes with Git GUI"
 format: html
 ---
 

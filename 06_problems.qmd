@@ -129,7 +129,7 @@ Even experienced users encounter problems when working with Git and GitHub. Thes
 # Summary {.unnumbered}
 
 | Problem | Fix |
-|------------------------------------|------------------------------------|
+|----|----|
 | Authentication fails | Use PAT or set up SSH |
 | Push fails due to README conflict | Don’t initialize GitHub repo with README |
 | Git not recognized | Install Git and restart IDE |

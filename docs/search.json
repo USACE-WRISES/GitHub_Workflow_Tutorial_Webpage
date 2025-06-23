@@ -252,121 +252,121 @@
   {
     "objectID": "03_fork_vscode.html",
     "href": "03_fork_vscode.html",
-    "title": "11  Fork a New Repository with VSCode",
+    "title": "11  Forking a Repository and Making Changes with Git GUI",
     "section": "",
     "text": "Learning Objectives\n\nUnderstand what it means to fork a repository on GitHub\nSuccessfully fork a repository on GitHub and make changes locally using VSCode\nIdentify common errors and learn how to fix them\n\n\n\nStep-by-Step Instructions\n\nPart 1: Fork the Repository on GitHub\n\nNavigate to the public repository you want to contribute to. (e.g., https://github.com/vmahan1998/GitHub_Basic_Skills.git)\nClick the “Fork button in the top-right corner of the page.\nChoose your GitHub account as the destination for the fork.\nGitHub will create a copy of the repository under your account.\n\n\n\nPart 2: Clone the Forked Repository Locally\n\nOpen Visual Studio Code (VSCode).\nOn the Welcome page, click Clone Git Repository.\n\nIf you don’t see this option, install the GitHub Extension from the VSCode marketplace.\n\nPaste the repository URL.\nChoose a local folder where the repository should be saved.\nName the directory (typically the same as the repo name “GitHub_Basic_Skills”).\nWhen prompted, click “Open” to begin working inside the cloned repository.\n\n\n\nPart 3: Create New Branch\n\nIn VSCode, open the Source Control sidebar (click the branch icon or press Ctrl+Shift+G).\nClick the branch name (e.g., main) in the lower-left corner or at the top of the Source Control pane.\nSelect “Create new branch” from the dropdown.\nEnter a name for your branch (e.g., new-message) and press “Enter”.\nVSCode will automatically switch you to the new branch.\n\n\n\nPart 4: Make and Commit Changes Locally\n\nEdit the files in VSCode as needed (e.g., modify EDIT_ME.md or source code).\n\n\n\nSave your changes (Ctrl+S or File &gt; Save).\n\n\n\nOpen the Source Control pane.\n\n\n\nYou should see your changed files listed.\n\n\n\nHover over the file and click the + icon to stage it, or click the + icon next to Changes to stage all files.\n\n\n\nIn the message box at the top, write a clear and descriptive commit message.\n\n\n\nClick the “✓” Commit button (or use the check mark icon).\n\n\n\nClick the “↥” Push icon in the bottom bar or from the Source Control menu to push your branch to GitHub.\n\n\n\nPart 6: Create a Pull Request\n\nGo to your forked repository on GitHub in a web browser.\nGitHub will prompt you to compare & open a pull request.\nClick “Compare & pull request”.\nAdd a descriptive title and explanation of your changes.\nClick “Create pull request” to propose your contribution to the original repository.\n\n\n\nPart 7: Merge Pull Request (for repository maintainers)\n\nIf you have permission, go to the pull request on the original repository.\nReview the changes and click “Merge pull request”.\nConfirm the merge and delete the feature branch if no longer needed.\n\n\n\n\nVideo Tutorial\n\nFork the Repository\n\n\n\nCreate a Pull Request\n\n\n\nMerge a Pull Request\n\n\n\n\nTroubleshooting\n\nRemote repository not found\nMake sure you created the repository on GitHub and copied the correct HTTPS or SSH URL. VSCode does not create remote repositories — it only connects to them.\nVSCode can:\n\nClone a remote repository from GitHub\nConnect your local changes to a remote repo via Git\nPush changes to an existing remote repository\n\nAuthentication failed\nGitHub no longer supports passwords for HTTPS. If prompted, use a personal access token (PAT) instead. You can generate one at https://github.com/settings/tokens.\nPush fails due to README or file conflicts\nIf the GitHub repo was initialized with a README, license, or .gitignore, and your local repo wasn’t, this can cause merge conflicts. Create your GitHub repo without those options when pushing an existing local project.\nGit not detected\nIf Git features don’t appear in VSCode, install Git from https://git-scm.com and restart VSCode. Go to View &gt; Command Palette &gt; Git: Show Git Output to check if it’s recognized.\nPushed changes not showing on GitHub\nMake sure you pushed to the correct remote (usually origin) and correct branch (main or master). You can check the branch in the bottom-left corner of VSCode.\n\n\n\nAdditonal Resources\n\nGitHub Docs: Cloning a repository\nUsing Git in VSCode\nGitHub Docs: Creating a personal access token",
     "crumbs": [
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Fork a New Repository with VSCode</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html",
     "href": "03_fork_rstudio.html",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "",
     "text": "Learning Objectives",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-1-fork-the-repository-on-github",
     "href": "03_fork_rstudio.html#part-1-fork-the-repository-on-github",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 1: Fork the Repository on GitHub",
     "text": "Part 1: Fork the Repository on GitHub\n\nNavigate to the public repository you want to contribute to. (e.g., https://github.com/vmahan1998/GitHub_Basic_Skills.git)\nClick the “Fork button in the top-right corner of the page.\nChoose your GitHub account as the destination for the fork.\nGitHub will create a copy of the repository under your account.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-2-clone-the-forked-repository-locally",
     "href": "03_fork_rstudio.html#part-2-clone-the-forked-repository-locally",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 2: Clone the Forked Repository Locally",
     "text": "Part 2: Clone the Forked Repository Locally\n\nOpen RStudio.\nGo to File &gt; New Project &gt; Version Control &gt; Git.\nPaste the URL for the repository you want to clone:\nExample: “https://github.com/yourusername/your-repo-name.git”\nChoose a directory where you want to store the project.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-3-create-new-branch",
     "href": "03_fork_rstudio.html#part-3-create-new-branch",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 3: Create New Branch",
     "text": "Part 3: Create New Branch\n\nIn the Terminal in RStudio type:\n\n-   git checkout -b new-message\nNote: “new-message” is the name of the new branch.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-4-make-and-commit-changes-locally",
     "href": "03_fork_rstudio.html#part-4-make-and-commit-changes-locally",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 4: Make and Commit Changes Locally",
     "text": "Part 4: Make and Commit Changes Locally\n\nEdit files in the RStudio editor as needed (e.g., modify EDIT_ME.md or code scripts).\nIn the Git tab (upper-right pane), click “Refresh” or”Commit”.\nStage the files you changed by checking the boxes next to them.\nAdd a descriptive commit message in the message box.\nClick “Commit”.\nClick the green arrow pointed north to push changes to GitHub Repo.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-6-create-a-pull-request",
     "href": "03_fork_rstudio.html#part-6-create-a-pull-request",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 6: Create a Pull Request",
     "text": "Part 6: Create a Pull Request\n\nGo to your forked repository on GitHub in a web browser.\nGitHub will prompt you to compare & open a pull request.\nClick “Compare & pull request”.\nAdd a descriptive title and explanation of your changes.\nClick “Create pull request” to propose your contribution to the original repository.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#part-7-merge-pull-request-for-repository-maintainers",
     "href": "03_fork_rstudio.html#part-7-merge-pull-request-for-repository-maintainers",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Part 7: Merge Pull Request (for repository maintainers)",
     "text": "Part 7: Merge Pull Request (for repository maintainers)\n\nIf you have permission, go to the pull request on the original repository.\nReview the changes and click “Merge pull request”.\nConfirm the merge and delete the feature branch if no longer needed.",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#fork-the-repository",
     "href": "03_fork_rstudio.html#fork-the-repository",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Fork the Repository",
     "text": "Fork the Repository",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#clone-the-repository-create-a-new-branch-and-edit-files",
     "href": "03_fork_rstudio.html#clone-the-repository-create-a-new-branch-and-edit-files",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Clone the Repository, Create a New Branch, and Edit Files",
     "text": "Clone the Repository, Create a New Branch, and Edit Files",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#create-a-pull-request",
     "href": "03_fork_rstudio.html#create-a-pull-request",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Create a Pull Request",
     "text": "Create a Pull Request",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
     "objectID": "03_fork_rstudio.html#merge-a-pull-request",
     "href": "03_fork_rstudio.html#merge-a-pull-request",
-    "title": "12  Fork a New Repository with RStudio",
+    "title": "12  Forking a Repository and Making Changes with Git GUI",
     "section": "Merge a Pull Request",
     "text": "Merge a Pull Request",
     "crumbs": [
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Fork a New Repository with RStudio</span>"
+      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Forking a Repository and Making Changes with Git GUI</span>"
     ]
   },
   {
@@ -394,7 +394,7 @@
     "href": "05_stashed_changes.html",
     "title": "14  Recovering Stashed Changes",
     "section": "",
-    "text": "Learning Objectives\n\nUnderstand what it means to stash changes in Git\nLearn how to view, apply, or drop stashed changes\nRestore work safely after interruptions or switching branches\n\n\n\nWhat Is Git Stash?\nStashing temporarily saves your uncommitted changes so you can work on something else without losing progress. Git stores these changes in a stack, which you can apply later to continue where you left off.\n\n\nWhen to Use Stash\nYou are in the middle of editing files but need to:\n\nSwitch branches\nPull new changes from the remote\nRun or test something cleanly without committing unfinished work\n\n\n\nStep-by-Step Instructions\n\nStep 1: Stash Your Changes\nIn your terminal or Git interface, run:\ngit stash\nThis command stashes all tracked changes. If you also want to stash untracked files:\ngit stash -u\nYou will see a confirmation message like:\nSaved working directory and index state WIP on main: abc1234 Update index file\n\n\nStep 2: List All Stashes\nYou can view all stored stashes with:\ngit stash list\nOutput will look like:\nstash@{0}: WIP on main: abc1234 Update index file stash@{1}: WIP on feature-branch: def5678 Add draft\n\n\nStep 3: Apply a Stash\nTo apply the most recent stash:\ngit stash apply\nTo apply a specific stash from the list:\ngit stash apply stash@{1}\nTo both apply and remove the stash:\ngit stash pop\n\n\nStep 4: Continue Your Work\nAfter applying the stash:\n\nOpen your files\nMake any additional edits\nStage and commit your changes as usual\n\n\n\n\nTool-Specific Tips\n\nRStudio\n\nUse the Terminal tab to run stash commands\nThere is no Git stash functionality in the Git tab\n\n\n\nVSCode\n\nUse the built-in Terminal to stash or apply\nExtensions like GitLens allow visual stash management\n\n\n\nGit GUI\n\nStashing is not supported in the interface\nUse Git Bash or another terminal to stash or apply changes\n\n\n\n\nTroubleshooting\n\nStash doesn’t apply: Check for merge conflicts or try a specific stash with git stash apply stash@{0}\nChanges disappear after popping: Use git stash list to confirm the stash was removed\nForgot what you stashed: Use git stash show -p to review details of a stash\n\n\n\nAdditional Resources\n\nGitHub Docs: git stash\n\n\n\nHappy Git with R: Stashing\n\n\n\nPro Git Book: Git Stashing",
+    "text": "Learning Objectives\n\nUnderstand what it means to stash changes in Git\nLearn how to view, apply, or drop stashed changes\nRestore work safely after interruptions or switching branches\n\n\n\nWhat Is Git Stash?\nStashing temporarily saves your uncommitted changes so you can work on something else without losing progress. Git stores these changes in a stack, which you can apply later to continue where you left off.\n\n\nWhen to Use Stash\nYou are in the middle of editing files but need to:\n\nSwitch branches\nPull new changes from the remote\nRun or test something cleanly without committing unfinished work\n\n\n\nStep-by-Step Instructions\n\nStep 1: Stash Your Changes\nIn your terminal or Git interface, run:\ngit stash\nThis command stashes all tracked changes. If you also want to stash untracked files:\ngit stash -u\nYou will see a confirmation message like:\nSaved working directory and index state WIP on main: abc1234 Update index file\n\n\nStep 2: List All Stashes\nYou can view all stored stashes with:\ngit stash list\nOutput will look like:\nstash@{0}: WIP on main: abc1234 Update index file stash@{1}: WIP on feature-branch: def5678 Add draft\n\n\nStep 3: Apply a Stash\nTo apply the most recent stash:\ngit stash apply\nTo apply a specific stash from the list:\ngit stash apply stash@{1}\nTo both apply and remove the stash:\ngit stash pop\n\n\nStep 4: Continue Your Work\nAfter applying the stash:\n\nOpen your files\nMake any additional edits\nStage and commit your changes as usual\n\n\n\n\nTool-Specific Tips\n\nRStudio\n\nUse the Terminal tab to run stash commands\nThere is no Git stash functionality in the Git tab\n\n\n\nVSCode\n\nUse the built-in Terminal to stash or apply\nExtensions like GitLens allow visual stash management\n\n\n\nGit GUI\n\nStashing is not supported in the interface\nUse Git Bash or another terminal to stash or apply changes\n\n\n\n\nTroubleshooting\n\nStash doesn’t apply: Check for merge conflicts or try a specific stash with git stash apply stash@{0}\nChanges disappear after popping: Use git stash list to confirm the stash was removed\nForgot what you stashed: Use git stash show -p to review details of a stash\n\n\n\nAdditional Resources\n\nGitHub Docs: git stash\nHappy Git with R: Stashing\nPro Git Book: Git Stashing",
     "crumbs": [
       "<span class='chapter-number'>14</span>  <span class='chapter-title'>Recovering Stashed Changes</span>"
     ]
@@ -404,7 +404,7 @@
     "href": "06_problems.html",
     "title": "15  Troubleshooting Common Problems",
     "section": "",
-    "text": "Learning Objectives\n\nRecognize several common problems when using GitHub\nLearn how to troubleshoot common Git issues with step-by-step solutions\nBuild confidence navigating authentication, syncing, and collaboration challenges\n\n\n\nWhat Are Common GitHub Problems?\nEven experienced users encounter problems when working with Git and GitHub. These issues usually occur during setup, collaboration, or when switching between tools like RStudio, VSCode, and Git GUI.\n\n\nWhen Do These Problems Occur?\n\nPushing changes without proper authentication\nPulling updates when your local files have diverged\nConflicting file versions due to multiple contributors\nForgetting to stage, commit, or sync your changes\nNot configuring Git properly the first time\n\n\n\nStep-by-Step Guide to Fix Common Issues\n\nProblem 1: Authentication Failed\nWhat it looks like: You’re prompted for a password, but login fails.\nWhy it happens: GitHub no longer supports password authentication for HTTPS.\nSolution:\n\nGenerate a Personal Access Token (PAT).\nUse the token in place of your GitHub password when prompted.\nConsider using an SSH key for future sessions (especially in VSCode).\n\n\n\nProblem 2: Repo Exists on GitHub, But Push Fails\nWhat it looks like: You get an error saying remote repository not found or push is rejected.\nWhy it happens: The GitHub repo is initialized with a README or other files that conflict with your local setup.\nSolution:\n\nWhen creating the repo on GitHub, do not initialize with README, license, or .gitignore.\nIf conflicts exist, pull first:\ngit pull origin main --allow-unrelated-histories\nResolve any conflicts, then push.\n\n\n\nProblem 3: Git Not Detected\nWhat it looks like: Git features are missing in RStudio or VSCode.\nWhy it happens: Git is not installed or not properly linked to your IDE.\nSolution:\n\nInstall Git from git-scm.com.\nRestart your IDE.\nIn RStudio: Go to Tools &gt; Global Options &gt; Git/SVN and verify the Git executable path.\nIn VSCode: Git should be detected automatically. If not, check your system path.\n\n\n\nProblem 4: Changes Aren’t Showing on GitHub\nWhat it looks like: You committed locally, but nothing appears in your GitHub repo.\nWhy it happens: You forgot to push your changes.\nSolution:\n\nAfter committing, push using:\ngit push origin main\nRefresh the GitHub page to confirm.\n\n\n\nProblem 5: You Cloned the Wrong Repo or Fork\nWhat it looks like: You’re editing a repo, but you can’t push changes.\nWhy it happens: You cloned the original repo instead of your fork.\nSolution:\n\nFork the original repository on GitHub.\nClone your fork, not the original project.\nConfirm your remote URL with:\ngit remote -v\n\n\n\n\nTool-Specific Tips\n\nRStudio\n\nUse the Git tab to commit and push\nIf Git tab is missing, configure Git in Tools &gt; Global Options &gt; Git/SVN\n\n\n\nVSCode\n\nUse the Source Control tab\nLook for inline errors or tooltips when actions fail\n\n\n\nGit GUI\n\nUse “Rescan” and “Push” manually\nAdd remote via Remote &gt; Add\n\n\n\n\nSummary\n\n\n\n\n\n\n\nProblem\nFix\n\n\n\n\nAuthentication fails\nUse PAT or set up SSH\n\n\nPush fails due to README conflict\nDon’t initialize GitHub repo with README\n\n\nGit not recognized\nInstall Git and restart IDE\n\n\nCan’t push changes\nMake sure you’re on the correct branch and have committed\n\n\nWrong repo cloned\nConfirm remote URL matches your GitHub fork\n\n\n\n\n\nAdditional Resources\n\nGitHub Docs: Troubleshooting Git\nHappy Git with R\nPro Git Book\nVSCode Docs: Git Support",
+    "text": "Learning Objectives\n\nRecognize several common problems when using GitHub\nLearn how to troubleshoot common Git issues with step-by-step solutions\nBuild confidence navigating authentication, syncing, and collaboration challenges\n\n\n\nWhat Are Common GitHub Problems?\nEven experienced users encounter problems when working with Git and GitHub. These issues usually occur during setup, collaboration, or when switching between tools like RStudio, VSCode, and Git GUI.\n\n\nWhen Do These Problems Occur?\n\nPushing changes without proper authentication\nPulling updates when your local files have diverged\nConflicting file versions due to multiple contributors\nForgetting to stage, commit, or sync your changes\nNot configuring Git properly the first time\n\n\n\nStep-by-Step Guide to Fix Common Issues\n\nProblem 1: Authentication Failed\nWhat it looks like: You’re prompted for a password, but login fails.\nWhy it happens: GitHub no longer supports password authentication for HTTPS.\nSolution:\n\nGenerate a Personal Access Token (PAT).\nUse the token in place of your GitHub password when prompted.\nConsider using an SSH key for future sessions (especially in VSCode).\n\n\n\nProblem 2: Repo Exists on GitHub, But Push Fails\nWhat it looks like: You get an error saying remote repository not found or push is rejected.\nWhy it happens: The GitHub repo is initialized with a README or other files that conflict with your local setup.\nSolution:\n\nWhen creating the repo on GitHub, do not initialize with README, license, or .gitignore.\nIf conflicts exist, pull first:\ngit pull origin main --allow-unrelated-histories\nResolve any conflicts, then push.\n\n\n\nProblem 3: Git Not Detected\nWhat it looks like: Git features are missing in RStudio or VSCode.\nWhy it happens: Git is not installed or not properly linked to your IDE.\nSolution:\n\nInstall Git from git-scm.com.\nRestart your IDE.\nIn RStudio: Go to Tools &gt; Global Options &gt; Git/SVN and verify the Git executable path.\nIn VSCode: Git should be detected automatically. If not, check your system path.\n\n\n\nProblem 4: Changes Aren’t Showing on GitHub\nWhat it looks like: You committed locally, but nothing appears in your GitHub repo.\nWhy it happens: You forgot to push your changes.\nSolution:\n\nAfter committing, push using:\ngit push origin main\nRefresh the GitHub page to confirm.\n\n\n\nProblem 5: You Cloned the Wrong Repo or Fork\nWhat it looks like: You’re editing a repo, but you can’t push changes.\nWhy it happens: You cloned the original repo instead of your fork.\nSolution:\n\nFork the original repository on GitHub.\nClone your fork, not the original project.\nConfirm your remote URL with:\ngit remote -v\n\n\n\n\nTool-Specific Tips\n\nRStudio\n\nUse the Git tab to commit and push\nIf Git tab is missing, configure Git in Tools &gt; Global Options &gt; Git/SVN\n\n\n\nVSCode\n\nUse the Source Control tab\nLook for inline errors or tooltips when actions fail\n\n\n\nGit GUI\n\nUse “Rescan” and “Push” manually\nAdd remote via Remote &gt; Add\n\n\n\n\nSummary\n\n\n\n\n\n\n\nProblem\nFix\n\n\n\n\nAuthentication fails\nUse PAT or set up SSH\n\n\nPush fails due to README conflict\nDon’t initialize GitHub repo with README\n\n\nGit not recognized\nInstall Git and restart IDE\n\n\nCan’t push changes\nMake sure you’re on the correct branch and have committed\n\n\nWrong repo cloned\nConfirm remote URL matches your GitHub fork\n\n\n\n\n\nAdditional Resources\n\nHappy Git with R\nPro Git Book\nVSCode Docs: Git Support",
     "crumbs": [
       "<span class='chapter-number'>15</span>  <span class='chapter-title'>Troubleshooting Common Problems</span>"
     ]
