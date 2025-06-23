@@ -33,7 +33,9 @@ format: html
 
     -   git remote add origin https://github.com/yourusername/your-repo-name.git
 
-    -   git branch -M main
+    -   git add.
+
+    -   Git commit -m “Initial Commit”
 
     -   git push -u origin main
 
