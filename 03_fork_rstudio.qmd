@@ -1,5 +1,5 @@
 ---
-title: "Forking a Repository and Making Changes with Git GUI"
+title: "Forking a Repository and Making Changes with RStudio"
 format: html
 ---
 
